@@ -1,6 +1,8 @@
 {
     "scripts": {
         "build": "tsc",
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix",
         "load-verses": "pnpm run build && node dist/data-loader/index.js"
     },
     "engines": {
@@ -9,6 +11,13 @@
     },
     "devDependencies": {
         "@types/node": "^20.9.0",
+        "@typescript-eslint/eslint-plugin": "^6.11.0",
+        "@typescript-eslint/parser": "^6.11.0",
+        "eslint": "^8.54.0",
         "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "knex": "^3.0.1",
+        "pg": "^8.11.3"
     }
 }

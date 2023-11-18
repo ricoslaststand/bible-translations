@@ -9,7 +9,7 @@ const VERSE_BUFFER_LIMIT = 20
 const BIBLE_TRANSLATION_FILE_PATH = './packages/data-loader/bible-translations'
 
 const PARSE_BIBLE_TRANSLATION = (translationFile: string): string => {
-
+  return translationFile.replace(BIBLE_TRANSLATION_FILE_TYPE, "")
 }
 
 const parseVerseInfo = (verseInfo: string): { book: string, chapterNumber: number, verseNumber: number } => {
