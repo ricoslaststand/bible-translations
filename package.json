@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "build": "tsc",
+        "load-verses": "pnpm run build && node dist/data-loader/index.js"
+    },
+    "engines": {
+        "node": ">=10",
+        "pnpm": ">=3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0",
+        "typescript": "^5.2.2"
+    }
+}
